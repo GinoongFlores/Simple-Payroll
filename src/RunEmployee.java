@@ -24,10 +24,12 @@ public class RunEmployee {
         } else if(press.equalsIgnoreCase("P")) {
             System.out.println("Enter rate per hour and no. of hours worked seperated by space: ");
             System.out.println("Sample: 107.50 13");
-            String[] input = sc.nextLine().split(" ");
-    
-            partTimeEmployee.setRatePerHour(Double.parseDouble(input[0]));
-            partTimeEmployee.setHoursWorked(Integer.parseInt(input[1]));
+            
+            System.out.print("Enter your rate per hour: ");
+            partTimeEmployee.setRatePerHour(sc.nextDouble());
+
+            System.out.print("Enter your no. of hours worked: ");
+            partTimeEmployee.setHoursWorked(sc.nextInt());
           
             System.out.printf("Name: " + employee.getName() + "\nWage: %.2f",partTimeEmployee.getWage());
 

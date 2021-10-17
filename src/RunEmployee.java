@@ -29,7 +29,7 @@ public class RunEmployee {
             partTimeEmployee.setRatePerHour(Double.parseDouble(input[0]));
             partTimeEmployee.setHoursWorked(Integer.parseInt(input[1]));
           
-            System.out.printf("Name: " + employee.getName() + "\nWage: %.2f",partTimeEmployee.getWage());
+            System.out.printf("\nName: " + employee.getName() + "\nWage: %.2f",partTimeEmployee.getWage());
 
         } else {
             System.out.println("YOU ENTERED AN INVALID INPUT!");
